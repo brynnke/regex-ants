@@ -1,26 +1,22 @@
 # Regex Toutorial on  matching email
-Introductory paragraph (replace this with your text)
-Regular expression, also shortened to regex, is a sequence of characters that define specific search patterns. Included in code regex are used to find certain patterns of characters within a string. Javascript is a multifacited tool. Useful in man accpects of web-development. Regular expressions are patterns used to match character combinations in strings. Javascript expressions are also objects. There are many ways these patterns are used, exec(), test(), RegExp etc. 
+
+Regular expression aka regex, is a simple pattern of characters. These characters are used to search and find patterns in strings. They also find and replace characters within a string or validate input. 
 
 
 ## Summary
-The regex code we will be going over is: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This tutorial is going to explain the use of regex to match emails using: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ 
+The regex we are analyzing matches character information for valid e-mail addresses. 
 
 ## Table of Contents
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+
 
 ## Regex Components
 
@@ -29,30 +25,33 @@ Briefly summarize the regex you will be describing and what you will explain. In
 Anchors used to contain this regular expression include: ^ (to start), and $ (to finish). 
 
 ### Quantifiers
-
-
-### OR Operator
+Quantifiers are used to lay out how many times given characters are expected to appear. 
+The + is a quantifier. This quantifier will connect the email-name and email carrier and .com. {2,6}, is a quantifier as well, this will allow a match range of those alloted numbers. 
 
 
 ### Character Classes
+Character class in the above expression is \d. \d matches a single character, that is a digit from 0/9. It only matches to single digits, no doubles. 
 
 ### Flags
 
 ### Grouping and Capturing
 
+The first capturing group is ( [a-z0-9_\.-]+). This matches user emailname. ([\da-z\.-]+), matches the email carrier. ([a-z\.]{2,6}), captures the last part of the line the .com. 
+
 ### Bracket Expressions
+
+The included bracket expressions [a-z0-9_\.-], [\da-z.-]. The first one matches any letter and is case senstive, as well as matching charcters 0-9. It also matched characters '_,-' as well. The second expression matches any character within the parameters. 
 
 ### Greedy and Lazy Match
 
+The email regex does include greedy matches. Because is has the + quantifier, it will match as many given times you need. Using {} is a greedy as well. 
+
+
 ### Boundaries
 
-### Back-references
-
-### Look-ahead and Look-behind
-
 ## Author
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+My name is Brynn. I am currently learning full-stack web development. This is my first go at a gist! 
+https://github.com/brynnke
 
 ## sources
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
