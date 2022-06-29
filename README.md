@@ -12,7 +12,6 @@ The regex we are analyzing matches character information for valid e-mail addres
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
@@ -32,7 +31,7 @@ The + is a quantifier. This quantifier will connect the email-name and email car
 ### Character Classes
 Character class in the above expression is \d. \d matches a single character, that is a digit from 0/9. It only matches to single digits, no doubles. 
 
-### Flags
+
 
 ### Grouping and Capturing
 
@@ -47,7 +46,7 @@ The included bracket expressions [a-z0-9_\.-], [\da-z.-]. The first one matches 
 The email regex does include greedy matches. Because is has the + quantifier, it will match as many given times you need. Using {} is a greedy as well. 
 
 
-### Boundaries
+
 
 ## Author
 My name is Brynn. I am currently learning full-stack web development. This is my first go at a gist! 
